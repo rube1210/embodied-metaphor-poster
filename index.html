@@ -142,7 +142,51 @@
     .back:hover {
       background: #2d6a73;
     }
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.7rem;
+  flex-wrap: wrap;
+}
 
+.section-nav a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #183642;
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.section-nav a:hover {
+  background: #2d6a73;
+}
+
+.section-nav .home-link {
+  background: #2d6a73;
+}
+
+.section-nav .next-link {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .section-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .section-nav a {
+    text-align: center;
+  }
+
+  .section-nav .next-link {
+    margin-left: 0;
+  }
+}
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -331,8 +375,10 @@
     también basada en principios de la lingüística cognitiva.
   </div>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#punto-partida">Siguiente: Punto de partida y trayectoria →</a>
+</nav></section>
 
 <section id="punto-partida">
   <h2>1. Punto de partida y trayectoria de los grupos</h2>
@@ -472,8 +518,11 @@
     grupos y la ausencia de asignación aleatoria.
   </div>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#sintesis">← Anterior: El estudio en síntesis</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#diseno">Siguiente: Diseño del estudio →</a>
+</nav></section>
 
 <section id="diseno">
   <h2>2. Diseño del estudio</h2>
@@ -609,8 +658,11 @@
     identificables ni grabaciones del alumnado.
   </p>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#punto-partida">← Anterior: Punto de partida y trayectoria</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#intervencion">Siguiente: Intervención →</a>
+</nav></section>
 
 <section id="intervencion">
   <h2>3. Intervención</h2>
@@ -781,8 +833,11 @@
     evidencia cualitativa equivalente a los resultados de las pruebas.
   </div>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#diseno">← Anterior: Diseño del estudio</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#evaluacion">Siguiente: Evaluación →</a>
+</nav></section>
 
 <section id="evaluacion">
   <h2>4. Evaluación</h2>
@@ -887,8 +942,11 @@
     estaban disponibles.
   </p>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#intervencion">← Anterior: Intervención</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#resultados">Siguiente: Resultados ampliados →</a>
+</nav></section>
 
 <section id="resultados">
   <h2>5. Resultados ampliados</h2>
@@ -1156,8 +1214,11 @@
     </li>
   </ul>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#evaluacion">← Anterior: Evaluación</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#seguimiento">Siguiente: Seguimiento complementario →</a>
+</nav></section>
 
 <section id="seguimiento">
   <h2>6. Seguimiento complementario</h2>
@@ -1308,8 +1369,11 @@
     fuentes declaradas de recuerdo.
   </p>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#resultados">← Anterior: Resultados ampliados</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+  <a class="next-link" href="#referencias">Siguiente: Referencias →</a>
+</nav></section>
 
 <section id="referencias">
   <h2>7. Referencias</h2>
@@ -1468,8 +1532,10 @@
     investigación de TFM del autor.
   </div>
 
-  <a class="back" href="#inicio">Volver al inicio ↑</a>
-</section>
+<nav class="section-nav" aria-label="Navegación entre secciones">
+  <a href="#seguimiento">← Anterior: Seguimiento complementario</a>
+  <a class="home-link" href="#inicio">Volver al inicio ↑</a>
+</nav></section>
 
   <footer>
     <p>

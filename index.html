@@ -229,7 +229,43 @@
       section {
         padding: 1.2rem;
       }
-    }
+.center-cell {
+  text-align: center;
+}
+
+.row-enactiva {
+  background: #f4faf9;
+}
+
+.row-evocada {
+  background: #fff8f1;
+}
+
+.trajectory-list {
+  display: grid;
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+
+.trajectory-item {
+  background: #f7fafb;
+  border-left: 5px solid #2d6a73;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.trajectory-item strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #183642;
+}
+
+.trajectory-flow {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+   }
   </style>
 </head>
 
@@ -454,15 +490,15 @@
       </thead>
 
       <tbody>
-        <tr>
-          <th scope="row">Enactiva/directa — GE</th>
-          <td><em>n</em> = 31</td>
+        <tr class="row-enactiva">
+          <th scope="row">Enactiva/directa</th>
+          <td class="center-cell"><em>n</em> = 31</td>
           <td>27 alumnas y 4 alumnos</td>
         </tr>
 
-        <tr>
-          <th scope="row">Evocada/mediada — GdC</th>
-          <td><em>n</em> = 32</td>
+        <tr class="row-evocada">
+          <th scope="row">Evocada/mediada</th>
+          <td class="center-cell"><em>n</em> = 32</td>
           <td>27 alumnas y 5 alumnos</td>
         </tr>
       </tbody>
@@ -498,9 +534,9 @@
       <thead>
         <tr>
           <th scope="col">Momento</th>
-          <th scope="col">Enactiva/directa — GE</th>
-          <th scope="col">Evocada/mediada — GdC</th>
-          <th scope="col">Contraste entre condiciones</th>
+          <th scope="col">Enactiva/directa</th>
+          <th scope="col">Evocada/mediada</th>
+          <th scope="col">Contraste</th>
         </tr>
       </thead>
 
@@ -513,14 +549,14 @@
         </tr>
 
         <tr>
-          <th scope="row">Postest, 17 días después de la intervención</th>
+          <th scope="row">Postest</th>
           <td><em>M</em> = 9.69</td>
           <td><em>M</em> = 10.59</td>
           <td><em>p</em> = .409</td>
         </tr>
 
         <tr>
-          <th scope="row">Postest retrasado, 56 días después del postest</th>
+          <th scope="row">Postest retrasado</th>
           <td><em>M</em> = 12.02</td>
           <td><em>M</em> = 14.02</td>
           <td><em>p</em> = .058</td>
@@ -557,15 +593,17 @@
     en las puntuaciones globales:
   </p>
 
-  <ul>
-    <li>
-      <strong>Modalidad enactiva/directa:</strong> 2.80 → 9.69 → 12.02.
-    </li>
+  <div class="trajectory-list">
+    <div class="trajectory-item">
+      <strong>Modalidad enactiva/directa</strong>
+      <span class="trajectory-flow">2.80 → 9.69 → 12.02</span>
+    </div>
 
-    <li>
-      <strong>Modalidad evocada/mediada:</strong> 4.14 → 10.59 → 14.02.
-    </li>
-  </ul>
+    <div class="trajectory-item">
+      <strong>Modalidad evocada/mediada</strong>
+      <span class="trajectory-flow">4.14 → 10.59 → 14.02</span>
+    </div>
+  </div>
 
   <p>
     En el GE, el cambio entre pretest y postest fue significativo
@@ -596,6 +634,7 @@
     <a class="home-link" href="#inicio">Volver al inicio ↑</a>
     <a class="next-link" href="#diseno">Siguiente: Diseño del estudio →</a>
   </nav>
+</section>
 </section>
   <h2>2. Diseño del estudio</h2>
 

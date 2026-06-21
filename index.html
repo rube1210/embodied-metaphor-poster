@@ -265,8 +265,51 @@
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 0.02rem;
-   }
-  </style>
+.results-table {
+  min-width: 560px;
+}
+
+.results-table th,
+.results-table td {
+  vertical-align: middle;
+}
+
+.results-table thead th {
+  text-align: center;
+}
+
+.results-table thead th:first-child {
+  text-align: left;
+}
+
+.results-table td:nth-child(2),
+.results-table td:nth-child(3),
+.results-table td:nth-child(4) {
+  text-align: center;
+}
+
+.results-table .col-head {
+  display: block;
+  font-weight: bold;
+}
+
+.results-table .col-sub {
+  display: block;
+  font-size: 0.95em;
+  font-weight: normal;
+}
+
+.results-table .row-pretest {
+  background: #f4faf9;
+}
+
+.results-table .row-postest {
+  background: #fffdf8;
+}
+
+.results-table .row-retrasado {
+  background: #f7f9fc;
+}  </style>
 </head>
 
 <body id="inicio">
@@ -529,41 +572,49 @@
 
   <div class="table-wrap">
     <table>
-      <caption>Puntuaciones globales por condición y momento de evaluación</caption>
+<div class="table-wrap">
+  <table class="results-table">
+    <caption>Puntuaciones globales por condición y momento de evaluación</caption>
 
-      <thead>
-        <tr>
-          <th scope="col">Momento</th>
-          <th scope="col">Enactiva/directa</th>
-          <th scope="col">Evocada/mediada</th>
-          <th scope="col">Contraste</th>
-        </tr>
-      </thead>
+    <thead>
+      <tr>
+        <th scope="col">Momento</th>
+        <th scope="col">
+          <span class="col-head">Enactiva</span>
+          <span class="col-sub">directa</span>
+        </th>
+        <th scope="col">
+          <span class="col-head">Evocada</span>
+          <span class="col-sub">mediada</span>
+        </th>
+        <th scope="col">Contraste</th>
+      </tr>
+    </thead>
 
-      <tbody>
-        <tr>
-          <th scope="row">Pretest</th>
-          <td><em>M</em> = 2.80</td>
-          <td><em>M</em> = 4.14</td>
-          <td><em>p</em> = .026</td>
-        </tr>
+    <tbody>
+      <tr class="row-pretest">
+        <th scope="row">Pretest</th>
+        <td><em>M</em> = 2.80</td>
+        <td><em>M</em> = 4.14</td>
+        <td><em>p</em> = .026</td>
+      </tr>
 
-        <tr>
-          <th scope="row">Postest</th>
-          <td><em>M</em> = 9.69</td>
-          <td><em>M</em> = 10.59</td>
-          <td><em>p</em> = .409</td>
-        </tr>
+      <tr class="row-postest">
+        <th scope="row">Postest</th>
+        <td><em>M</em> = 9.69</td>
+        <td><em>M</em> = 10.59</td>
+        <td><em>p</em> = .409</td>
+      </tr>
 
-        <tr>
-          <th scope="row">Postest retrasado</th>
-          <td><em>M</em> = 12.02</td>
-          <td><em>M</em> = 14.02</td>
-          <td><em>p</em> = .058</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <tr class="row-retrasado">
+        <th scope="row">Postest<br>retrasado</th>
+        <td><em>M</em> = 12.02</td>
+        <td><em>M</em> = 14.02</td>
+        <td><em>p</em> = .058</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   <p>
     La puntuación global máxima correspondiente al contenido objetivo de los tres

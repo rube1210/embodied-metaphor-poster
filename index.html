@@ -383,6 +383,103 @@
   .results-table td {
     padding: 0.55rem 0.5rem;
   }
+.global-scores-table {
+  min-width: 500px;
+  font-size: 0.9rem;
+}
+
+.global-scores-table th,
+.global-scores-table td {
+  padding: 0.55rem 0.5rem;
+  vertical-align: middle;
+}
+
+.global-scores-table thead th {
+  text-align: center;
+  line-height: 1.15;
+}
+
+.global-scores-table thead th:first-child {
+  text-align: left;
+}
+
+.global-scores-table th:nth-child(2),
+.global-scores-table td:nth-child(2) {
+  background: #f4faf9;
+}
+
+.global-scores-table th:nth-child(3),
+.global-scores-table td:nth-child(3) {
+  background: #fff8f1;
+}
+
+.global-scores-table td:nth-child(2),
+.global-scores-table td:nth-child(3),
+.global-scores-table td:nth-child(4) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.global-scores-table th:nth-child(4),
+.global-scores-table td:nth-child(4) {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .global-scores-table {
+    min-width: 470px;
+    font-size: 0.82rem;
+  }
+
+  .global-scores-table th,
+  .global-scores-table td {
+    padding: 0.45rem 0.4rem;
+  }
+.global-scores-table {
+  min-width: 470px;
+  font-size: 0.86rem;
+}
+
+.global-scores-table th,
+.global-scores-table td {
+  padding: 0.45rem 0.4rem;
+  vertical-align: middle;
+}
+
+.global-scores-table thead th {
+  text-align: center;
+  line-height: 1.15;
+}
+
+.global-scores-table thead th:first-child {
+  text-align: left;
+}
+
+.global-scores-table th:nth-child(2),
+.global-scores-table td:nth-child(2) {
+  background: #f4faf9;
+}
+
+.global-scores-table th:nth-child(3),
+.global-scores-table td:nth-child(3) {
+  background: #fff8f1;
+}
+
+.global-scores-table td:nth-child(2),
+.global-scores-table td:nth-child(3),
+.global-scores-table td:nth-child(4) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.global-scores-table th:nth-child(4),
+.global-scores-table td:nth-child(4) {
+  text-align: center;
+}
+
+.global-scores-table .moment-cell {
+  white-space: normal;
+  font-weight: bold;
 }
 }  </style>
 </head>
@@ -653,12 +750,49 @@
     la modalidad <strong>evocada/mediada</strong> obtuvo una media superior.
   </p>
 
-  <div class="table-wrap">
-    <table>
 <div class="table-wrap">
-  <table class="results-table">
-<div class="table-wrap">
-  <table class="results-table">
+  <table class="results-table global-scores-table">
+    <caption>Puntuaciones globales por condición y momento de evaluación</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Momento</th>
+        <th scope="col" class="condition-label">
+          <span class="condition-main">Enactiva/</span>
+          <span class="condition-sub">directa</span>
+        </th>
+        <th scope="col" class="condition-label">
+          <span class="condition-main">Evocada/</span>
+          <span class="condition-sub">mediada</span>
+        </th>
+        <th scope="col">Contraste</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row" class="moment-cell">Pretest</th>
+        <td><em>M</em> = 2.80</td>
+        <td><em>M</em> = 4.14</td>
+        <td><em>p</em> = .026</td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="moment-cell">Postest</th>
+        <td><em>M</em> = 9.69</td>
+        <td><em>M</em> = 10.59</td>
+        <td><em>p</em> = .409</td>
+      </tr>
+
+      <tr>
+        <th scope="row" class="moment-cell">Postest<br>retrasado</th>
+        <td><em>M</em> = 12.02</td>
+        <td><em>M</em> = 14.02</td>
+        <td><em>p</em> = .058</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     <caption>Puntuaciones globales por condición y momento de evaluación</caption>
 
     <thead>

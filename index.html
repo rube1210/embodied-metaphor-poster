@@ -308,7 +308,20 @@
 }
 
 .results-table .row-retrasado {
-  background: #f7f9fc;
+  background: #f7f9fc;.condition-label {
+  text-align: center;
+  white-space: normal;
+}
+
+.condition-label .condition-main {
+  display: block;
+  font-weight: bold;
+}
+
+.condition-label .condition-sub {
+  display: block;
+  font-weight: normal;
+}
 }  </style>
 </head>
 
@@ -522,31 +535,39 @@
 
   <div class="table-wrap">
     <table>
-      <caption>Distribución de la muestra analítica</caption>
+ <div class="table-wrap">
+  <table>
+    <caption>Distribución de la muestra analítica</caption>
 
-      <thead>
-        <tr>
-          <th scope="col">Condición</th>
-          <th scope="col">Participantes</th>
-          <th scope="col">Distribución</th>
-        </tr>
-      </thead>
+    <thead>
+      <tr>
+        <th scope="col">Condición</th>
+        <th scope="col">Participantes</th>
+        <th scope="col">Distribución</th>
+      </tr>
+    </thead>
 
-      <tbody>
-        <tr class="row-enactiva">
-          <th scope="row">Enactiva/directa</th>
-          <td class="center-cell"><em>n</em> = 31</td>
-          <td>27 alumnas y 4 alumnos</td>
-        </tr>
+    <tbody>
+      <tr class="row-enactiva">
+        <th scope="row" class="condition-label">
+          <span class="condition-main">Enactiva/</span>
+          <span class="condition-sub">directa</span>
+        </th>
+        <td class="center-cell"><em>n</em> = 31</td>
+        <td>27 alumnas y 4 alumnos</td>
+      </tr>
 
-        <tr class="row-evocada">
-          <th scope="row">Evocada/mediada</th>
-          <td class="center-cell"><em>n</em> = 32</td>
-          <td>27 alumnas y 5 alumnos</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <tr class="row-evocada">
+        <th scope="row" class="condition-label">
+          <span class="condition-main">Evocada/</span>
+          <span class="condition-sub">mediada</span>
+        </th>
+        <td class="center-cell"><em>n</em> = 32</td>
+        <td>27 alumnas y 5 alumnos</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
   <p>
     La muestra analítica quedó constituida por <strong><em>N</em> = 63

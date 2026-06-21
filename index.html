@@ -321,6 +321,68 @@
 .condition-label .condition-sub {
   display: block;
   font-weight: normal;
+.results-table {
+  min-width: 500px;
+  font-size: 0.92rem;
+}
+
+.results-table th,
+.results-table td {
+  padding: 0.65rem 0.65rem;
+  vertical-align: middle;
+}
+
+.results-table thead th {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.results-table thead th:first-child {
+  text-align: left;
+}
+
+.results-table .row-pretest,
+.results-table .row-postest,
+.results-table .row-retrasado {
+  background: transparent;
+}
+
+.results-table .col-enactiva,
+.results-table .cell-enactiva {
+  background: #f4faf9;
+}
+
+.results-table .col-evocada,
+.results-table .cell-evocada {
+  background: #fff8f1;
+}
+
+.results-table .cell-enactiva,
+.results-table .cell-evocada,
+.results-table .cell-contrast {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.results-table .cell-contrast {
+  font-size: 0.9rem;
+}
+
+.results-table .moment-cell {
+  white-space: normal;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .results-table {
+    min-width: 480px;
+    font-size: 0.86rem;
+  }
+
+  .results-table th,
+  .results-table td {
+    padding: 0.55rem 0.5rem;
+  }
 }
 }  </style>
 </head>
@@ -595,18 +657,20 @@
     <table>
 <div class="table-wrap">
   <table class="results-table">
+<div class="table-wrap">
+  <table class="results-table">
     <caption>Puntuaciones globales por condición y momento de evaluación</caption>
 
     <thead>
       <tr>
         <th scope="col">Momento</th>
-        <th scope="col">
-          <span class="col-head">Enactiva</span>
-          <span class="col-sub">directa</span>
+        <th scope="col" class="condition-label col-enactiva">
+          <span class="condition-main">Enactiva/</span>
+          <span class="condition-sub">directa</span>
         </th>
-        <th scope="col">
-          <span class="col-head">Evocada</span>
-          <span class="col-sub">mediada</span>
+        <th scope="col" class="condition-label col-evocada">
+          <span class="condition-main">Evocada/</span>
+          <span class="condition-sub">mediada</span>
         </th>
         <th scope="col">Contraste</th>
       </tr>
@@ -614,24 +678,24 @@
 
     <tbody>
       <tr class="row-pretest">
-        <th scope="row">Pretest</th>
-        <td><em>M</em> = 2.80</td>
-        <td><em>M</em> = 4.14</td>
-        <td><em>p</em> = .026</td>
+        <th scope="row" class="moment-cell">Pretest</th>
+        <td class="cell-enactiva"><em>M</em> = 2.80</td>
+        <td class="cell-evocada"><em>M</em> = 4.14</td>
+        <td class="cell-contrast"><em>p</em> = .026</td>
       </tr>
 
       <tr class="row-postest">
-        <th scope="row">Postest</th>
-        <td><em>M</em> = 9.69</td>
-        <td><em>M</em> = 10.59</td>
-        <td><em>p</em> = .409</td>
+        <th scope="row" class="moment-cell">Postest</th>
+        <td class="cell-enactiva"><em>M</em> = 9.69</td>
+        <td class="cell-evocada"><em>M</em> = 10.59</td>
+        <td class="cell-contrast"><em>p</em> = .409</td>
       </tr>
 
       <tr class="row-retrasado">
-        <th scope="row">Postest<br>retrasado</th>
-        <td><em>M</em> = 12.02</td>
-        <td><em>M</em> = 14.02</td>
-        <td><em>p</em> = .058</td>
+        <th scope="row" class="moment-cell">Postest<br>retrasado</th>
+        <td class="cell-enactiva"><em>M</em> = 12.02</td>
+        <td class="cell-evocada"><em>M</em> = 14.02</td>
+        <td class="cell-contrast"><em>p</em> = .058</td>
       </tr>
     </tbody>
   </table>

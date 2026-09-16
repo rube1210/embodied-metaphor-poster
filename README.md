@@ -1,2 +1,5 @@
-# embodied-metaphor-poster
-Esta página reúne el material complementario del póster “Compromiso corporal y aprendizaje de la metáfora conceptual LA VIDA ES UN VIAJE en ELE”, presentado en el seminario Metaphor in L2 Acquisition, Learning and Teaching.
+# Una misma metáfora, dos formas de elaboración del significado
+
+Material complementario del póster de Rubén Astete Altamirano (Universidad Nebrija), presentado en el XIV Congreso Internacional AELCO, Universidad de Murcia, 23–25 de septiembre de 2026.
+
+**Micrositio:** https://rube1210.github.io/embodied-metaphor-poster/
